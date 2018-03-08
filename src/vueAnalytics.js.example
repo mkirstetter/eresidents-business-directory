@@ -1,0 +1,2 @@
+// eslint-disable-next-line
+export const gaId = '!!! Update with your own GA ID !!!';

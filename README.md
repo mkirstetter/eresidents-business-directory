@@ -11,6 +11,9 @@ npm install
 # configure firebase
 copy src/firebaseConfig.js.example to src/firebaseConfig.js and update credentials.
 
+# configure Google Analytics
+copy src/vueAnalytics.js.example to src/vueAnalytics.js and update GA property ID.
+
 # serve with hot reload at localhost:8080
 npm run dev
 
@@ -31,5 +34,6 @@ npm test
 ```
 ## TODO
 - Tests
+- Chat
 
 App built with [Vue.js](https://vuejs.org/) and [Firebase](https://firebase.google.com/).

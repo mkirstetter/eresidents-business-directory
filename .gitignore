@@ -9,6 +9,7 @@ yarn-error.log*
 selenium-debug.log
 sendgrid.env
 /src/firebaseConfig.js
+/src/vueAnalytics.js
 
 # Editor directories and files
 .idea
