@@ -4,7 +4,11 @@
       <div class="col-md-12 text-center">
         <ul class="list-inline">
           <li class="list-inline-item">2018 - Redefyne OÜ</li>-
-          <li class="list-inline-item"><a href="#">Github</a></li>-
+          <li class="list-inline-item">
+            <a href="https://github.com/mkirstetter/eresidents-business-directory">
+              Github
+            </a>
+          </li>-
           <li class="list-inline-item">
             <router-link to="/terms">Terms & Conditions</router-link>
           </li>-
