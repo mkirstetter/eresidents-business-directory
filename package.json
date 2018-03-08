@@ -1,7 +1,7 @@
 {
-  "name": "er-services",
+  "name": "eresidents-business-directory",
   "version": "1.0.0",
-  "description": "E-residents services marketplace app",
+  "description": "eResidents Business Directory App",
   "author": "Manuel Kirstetter <manu@redefyne.co>",
   "private": true,
   "scripts": {
