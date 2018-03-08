@@ -1,0 +1,15 @@
+import Firebase from 'firebase';
+
+const config = {
+  apiKey: '!!! Fill in with your firebase credentials !!!',
+  authDomain: '!!! Fill in with your firebase credentials !!!',
+  databaseURL: '!!! Fill in with your firebase credentials !!!',
+  projectId: '!!! Fill in with your firebase credentials !!!',
+  storageBucket: '!!! Fill in with your firebase credentials !!!',
+  messagingSenderId: '!!! Fill in with your firebase credentials !!!',
+};
+
+export const firebaseApp = Firebase.initializeApp(config);
+export const db = firebaseApp.database();
+export const dbRequestsRef = db.ref('requests');
+export const dbUsersRef = db.ref('users');
