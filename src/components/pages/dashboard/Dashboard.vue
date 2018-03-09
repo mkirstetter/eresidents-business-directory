@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
           <div class="card-header">
             Filter by Services
@@ -29,47 +29,49 @@
       </div>
       <div class="col-md-8">
         <div class="card">
-          <table class="table table-striped table-hover">
-            <thead class="card-header">
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Company</th>
-                <th scope="col">Services</th>
-                <th scope="col">Website</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="user in filteredUsers" :key="user.uid">
-                <td>{{ user.firstName }} {{ user.lastName.charAt(0) }}.</td>
-                <td>{{ user.company }}</td>
-                <td class="services">
-                  <a href="#" class="badge badge-primary mr-1"
-                        v-for="service in user.services"
-                        :key="service"
-                        @click="addSearchTag(service)">
-                    {{ service }}
-                  </a>
-                </td>
-                <td>
-                  <a :href="`${user.website}?ref=erservices`"
-                      target="_blank">{{ user.website }}
-                  </a>
-                </td>
-                <td>
-                  <button class="btn btn-outline-primary"
-                          data-toggle="modal"
-                          data-target="#showUser"
-                          @click="showUser = user">
-                    <i class="fa fa-eye"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr v-if="!filteredUsers.length">
-                <td colspan="5" class="text-center">Sorry, no results!</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <thead class="card-header">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Company</th>
+                  <th scope="col">Services</th>
+                  <th scope="col">Website</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="user in filteredUsers" :key="user.uid">
+                  <td>{{ user.firstName }} {{ user.lastName.charAt(0) }}.</td>
+                  <td>{{ user.company }}</td>
+                  <td class="services">
+                    <a href="#" class="badge badge-primary mr-1"
+                          v-for="service in user.services"
+                          :key="service"
+                          @click="addSearchTag(service)">
+                      {{ service }}
+                    </a>
+                  </td>
+                  <td>
+                    <a :href="`${user.website}?ref=erservices`"
+                        target="_blank">{{ user.website }}
+                    </a>
+                  </td>
+                  <td>
+                    <button class="btn btn-outline-primary"
+                            data-toggle="modal"
+                            data-target="#showUser"
+                            @click="showUser = user">
+                      <i class="fa fa-eye"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr v-if="!filteredUsers.length">
+                  <td colspan="5" class="text-center">Sorry, no results!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

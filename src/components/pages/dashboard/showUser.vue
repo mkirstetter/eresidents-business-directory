@@ -64,7 +64,7 @@
             <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">
               Close
             </button>
-            <a :href="getLink(user)" class="btn btn-success">
+            <a :href="getLink(user)" class="btn btn-success" v-if="user.contact">
               Contact
             </a>
           </div>

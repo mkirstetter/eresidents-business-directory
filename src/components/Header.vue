@@ -14,7 +14,10 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item" v-if="currentUser">
-            <router-link to="/dashboard" class="nav-link">
+            <router-link to="/dashboard"
+                          class="nav-link"
+                          data-toggle="collapse"
+                          data-target=".navbar-collapse">
               Dashboard
             </router-link>
           </li>
@@ -36,9 +39,20 @@
               {{ currentUser.displayName ? currentUser.displayName : currentUser.email }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <router-link to="/settings/profile" class="dropdown-item">Settings</router-link>
+              <router-link to="/settings/profile"
+                            class="dropdown-item"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                Settings
+              </router-link>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#" @click="logout">Logout</a>
+              <a class="dropdown-item"
+                  href="#"
+                  @click="logout"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse">
+                Logout
+              </a>
             </div>
           </li>
         </ul>
