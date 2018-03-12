@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <settings-menu></settings-menu>
-      <div class="col-md-8">
+      <div class="col-md-9">
         <div class="card">
           <div class="card-header">
             Security

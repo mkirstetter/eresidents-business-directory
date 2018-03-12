@@ -15,9 +15,13 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item" v-if="currentUser">
             <router-link to="/dashboard"
-                          class="nav-link"
+                          class="nav-link d-lg-none"
                           data-toggle="collapse"
                           data-target=".navbar-collapse">
+              Dashboard
+            </router-link>
+            <router-link to="/dashboard"
+                          class="nav-link d-none d-lg-block">
               Dashboard
             </router-link>
           </li>
@@ -40,9 +44,13 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <router-link to="/settings/profile"
-                            class="dropdown-item"
+                            class="dropdown-item d-lg-none"
                             data-toggle="collapse"
                             data-target=".navbar-collapse">
+                Settings
+              </router-link>
+              <router-link to="/settings/profile"
+                            class="dropdown-item d-none d-lg-block">
                 Settings
               </router-link>
               <div class="dropdown-divider"></div>

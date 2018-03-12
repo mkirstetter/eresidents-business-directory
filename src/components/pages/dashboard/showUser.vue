@@ -29,7 +29,10 @@
               <label class="col-sm-3 col-form-label">Website</label>
               <div class="col-sm-9">
                 <p class="form-control-plaintext">
-                  {{ user.website }}
+                  <a :href="`${user.website}?ref=erbd.redefyne.co`"
+                      target="_blank">
+                    {{ user.website }}
+                  </a>
                 </p>
               </div>
             </div>

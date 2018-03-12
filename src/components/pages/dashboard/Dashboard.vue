@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-md-4 mb-4">
+      <div class="col-md-3 mb-4">
         <div class="card">
           <div class="card-header">
             Filter by Services
@@ -27,7 +27,7 @@
           </span> -->
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-9">
         <div class="card">
           <div class="table-responsive">
             <table class="table table-striped table-hover">
@@ -53,8 +53,9 @@
                     </a>
                   </td>
                   <td>
-                    <a :href="`${user.website}?ref=erservices`"
-                        target="_blank">{{ user.website }}
+                    <a :href="`${user.website}?ref=erbd.redefyne.co`"
+                        target="_blank">
+                      {{ user.website }}
                     </a>
                   </td>
                   <td>
